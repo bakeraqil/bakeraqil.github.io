@@ -1,0 +1,50 @@
+body {
+
+  height: 500px;
+    margin: auto;
+    width: 1024px;
+    padding: 10px;
+    background-color: #ebebeb;
+    font-size: 34px;
+    font-family: Verdana;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+  
+  h1, textarea, button, h3 {
+    margin-bottom: 15px;
+  }
+
+  textarea{
+    width: 400px;
+    height: 100px;
+  }
+
+  .typewriter{
+    position: relative;
+}
+.typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: #1d1f20;
+    width: 100%;
+    animation: typing 3s steps(14) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
